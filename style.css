@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 252, 253);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 100px);
+    gap: 10px;
+    width: 90%;
+    height: auto;
+}
+
+.circle {
+    margin: 10px;
+    background-color: rgba(208, 220, 240, 0.8);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.top-bar {
+    grid-column: 3 / 9;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar {
+    width: 100%;
+    height: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color:  rgba(213, 220, 228, 0.8);
+}
+
+.search-btn {
+    padding: 10px 20px;
+    background-color: rgb(221, 223, 238);
+    border: none;
+    border-radius: 20px;
+    height: 43px;
+}
+
+.icon-section {
+    grid-column: 2 / 5;
+    grid-row: 2 / 4;
+    background-color:  rgba(203, 208, 234, 0.8);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.icon {
+    background-color:rgba(177, 175, 176, 0.8);
+    height: 70%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-text {
+    background-color: rgba(177, 175, 176, 0.8);
+    height: 20%;
+    border-radius: 20px;
+    text-align:center;
+}
+
+.graph {
+    grid-column: 5 / 12;
+    grid-row: 2 / 4;
+    background-color:  rgba(129, 129, 129, 0.8);
+    border-radius: 20px;
+}
+
+.side-section {
+    grid-column: 12 / 13;
+    grid-row: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blue-btn {
+    width: 160px;
+    height: 40px;
+    border-radius: 20px;
+    justify-content: right;
+    text-align: center;
+}
+
+.bottom-section {
+    grid-column: 2 / 12;
+    grid-row: 5 / 6;
+    display: flex;
+    justify-content: space-around;
+}
+
+.gray-btn {
+    background-color: rgba(129, 129, 129, 0.8);
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    width: 120px;
+    height: 170px;
+    border-radius: 20px;
+}
+.forecasticon{
+    background-color: rgb(221, 223, 238);
+    height: 70%;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+.forecasttext{
+    background-color:  rgb(221, 223, 238);
+    width: 70px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+#currentImg {
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: contain; 
+}
